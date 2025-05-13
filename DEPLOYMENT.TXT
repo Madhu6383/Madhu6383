@@ -1,0 +1,51 @@
+Deployment Instructions for "Hume’s Dictum, Grounding and the Argument from Recombination"
+==========================================================================================
+
+Objective:
+---------
+Host the academic paper (PDF) on a static website or repository page for public access.
+
+Option 1: GitHub Pages
+----------------------
+1. Create a new GitHub repository.
+2. Add the following files to the repo:
+   - s.pdf
+   - README.md
+   - index.html (optional, if you want a web preview)
+3. Commit and push the changes.
+4. Go to Repository Settings > Pages.
+5. Select the main branch and `/root` folder.
+6. Click "Save".
+7. Your paper will be available at: `https://<your-username>.github.io/<repo-name>/s.pdf`
+
+Option 2: Simple Web Hosting (e.g., Netlify, Vercel)
+----------------------------------------------------
+1. Create a project directory.
+2. Place `s.pdf` and an `index.html` file linking to it.
+3. Deploy using Netlify CLI:
+   - Install with `npm install -g netlify-cli`
+   - Run `netlify deploy` and follow prompts
+   - Use `netlify deploy --prod` to make it public
+4. Share the generated link.
+
+Option 3: Local Hosting
+-----------------------
+1. Place `s.pdf` in a local directory.
+2. Run a local server:
+
+   - Python 3:
+     ```
+     python -m http.server
+     ```
+   - Node.js (with http-server):
+     ```
+     npx http-server .
+     ```
+
+3. Access it at `http://localhost:8000/s.pdf`
+
+Notes:
+------
+- Ensure `s.pdf` is renamed appropriately for clarity, e.g., `hume-grounding-paper.pdf`
+- Consider adding `robots.txt` if you don’t want it indexed by search engines.
+- Always include proper citation and licensing info.
