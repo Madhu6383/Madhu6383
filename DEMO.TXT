@@ -1,0 +1,50 @@
+Demo Instructions for: "Hume’s Dictum, Grounding and the Argument from Recombination"
+======================================================================================
+
+Objective:
+----------
+Demonstrate the contents of this project repository, including the PDF paper, HTML viewer, and relevant metadata.
+
+Prerequisites:
+--------------
+- A web browser (e.g., Chrome, Firefox, Edge)
+- A local HTTP server (optional for full functionality)
+  - Python 3: `python -m http.server`
+  - Node.js: `npx http-server`
+
+Demo Steps:
+-----------
+
+1. Navigate to the project folder containing:
+   - `s.pdf`                → The academic paper
+   - `Htmlcode.html`        → A simple web-based viewer
+   - `README.md`            → Overview of the project
+   - `Deployment.txt`       → Instructions for hosting
+   - `Demo.txt`             → This file
+
+2. Open `Htmlcode.html` in a web browser:
+   - Double-click the file OR
+   - Serve via local HTTP server for best iframe PDF loading:
+     ```
+     python -m http.server
+     ```
+     Then visit `http://localhost:8000/Htmlcode.html`
+
+3. Review the page:
+   - The title, author name, and abstract-style summary
+   - Embedded PDF preview of the paper
+   - Download link for offline access
+
+4. Optional Enhancements:
+   - Customize the HTML or CSS to match a university or journal site
+   - Link to additional materials, citations, or related works
+
+5. Share or deploy:
+   - Host on GitHub Pages, Netlify, or any static web host
+   - Share the `Htmlcode.html` and `s.pdf` together for maximum accessibility
+
+Notes:
+------
+- For clean public access, rename `s.pdf` to something descriptive, e.g., `hume-grounding-paper.pdf`
+- Consider adding `index.html` if this is meant to be a homepage
+- Always respect the author's rights and usage terms
