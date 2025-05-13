@@ -1,0 +1,16 @@
+import pkg_resources
+
+def generate_requirements_txt(filename="requirements.txt"):
+    # Get all the installed packages
+    installed_packages = pkg_resources.working_set
+
+    # Open the file in write mode
+    with open(filename, 'w') as f:
+        for package in installed_packages:
+            # Write each package and its version to the file
+            f.write(f"{package.project_name}=={package.version}\n")
+    
+    print(f"'{filename}' has been generated.")
+
+# Run the function to generate the requirements.txt
+generate_requirements_txt()
